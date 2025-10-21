@@ -1,0 +1,41 @@
+form{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    gap: 5px;
+    margin-left: 5px;
+}
+ 
+.input{
+    color: white;
+    padding: 6px;
+    border: none;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+label {
+    margin-top: 5px;
+}
+
+#cadastrarbtn {
+    margin: 0 auto;
+    height: 30px;
+    width: 150px;
+    background-color: rgb(105, 233, 93);
+    color: black ;
+    
+}
+
+#limparBtn {
+    margin: 0 auto;
+    height: 30px;
+    width: 100px;
+    background-color: rgb(93, 233, 233);
+    color: black ;   
+}
+
+.btn {
+    margin-top: 10px;
+    display: flex;
+}
