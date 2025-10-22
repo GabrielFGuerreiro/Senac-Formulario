@@ -3,6 +3,7 @@
 <head> <!-- Configurações da página -->
     <title>Hello, World!</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body> <!-- Corpo visual da página -->
@@ -12,7 +13,7 @@
         <input class="inputs" class="text" type="text" name="nomeInput" id="nomeInput" required> <!--"Name" é BackEnd e "id" é FrontEnd-->
 
         <label for="cpfInput">CPF <span style="color: red;">*</span>:</label>
-        <input class="inputs" class="text" type="text" name="cpfInput" id="cpfInput" mask="0000" required>
+        <input class="inputs" class="text" type="text" name="cpfInput" id="cpfInput" required>
 
         <label for="emailInput">E-mail <span style="color: red;">*</span>:</label>
         <input class="inputs" class="text" type="email" name="emailInput" id="emailInput" required>
@@ -33,8 +34,13 @@
         <input class="inputs" class="text" type="text" name="interesseInput" id="interesseInput">
 
         <div class="btn">
-            <input id="cadastrarBtn" type="submit" value="Cadastrar Cliente">
-            <input id="limparBtn" onclick="limpar()" type="button" value="Limpar">
+            <!-- <input id="cadastrarBtn" type="submit" value="Cadastrar Cliente"> -->
+            <button id="cadastrarBtn" onclick="cadastrar()" type="submit">
+                Cadastrar Cliente <i class="fas fa-floppy-disk"></i>
+            </button>
+            <button id="limparBtn" onclick="limpar()">
+                Limpar <i class="fas fa-eraser"></i>
+            </button>
         </div>
     </form>
 </body> <!-- Fim da página -->
@@ -48,4 +54,18 @@
         camposInputs.forEach(camposInputs => camposInputs.value = "");
     }
 
+function cadastrar()
+{
+    var nome = document.getElementById("nomeInput");
+    var cpf = document.getElementById("cpfInput");
+    var email = document.getElementById("emailInput");
+    var cel = document.getElementById("celularInput");
+
+    if(!nome.value || !cpf.value || !email.value || !cel.value)   
+    {
+        
+    }
+    
+    
+}
 </script>

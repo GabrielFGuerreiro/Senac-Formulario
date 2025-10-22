@@ -22,8 +22,8 @@ label {
     margin: 0 auto;
     height: 30px;
     width: 150px;
-    background-color: rgb(105, 233, 93);
-    color: black ;
+    background-color: rgb(57, 179, 20);
+    color: white ;
     
 }
 
@@ -31,8 +31,8 @@ label {
     margin: 0 auto;
     height: 30px;
     width: 100px;
-    background-color: rgb(93, 233, 233);
-    color: black ;   
+    background-color: rgb(20, 128, 179);
+    color: white;   
 }
 
 .btn {
